@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumer-ribbon" />
+        <module name="provide-service" />
+        <module name="consumer-feign" />
+        <module name="zuul-service" />
+      </profile>
+      <profile name="Annotation profile for cloud_project" enabled="true">
+        <sourceOutputDir name="../eureka-server/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../eureka-server/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud_project" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="consumer-feign" options="-parameters" />
+      <module name="consumer-ribbon" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
+      <module name="provide-service" options="-parameters" />
+      <module name="zuul-service" options="-parameters" />
+    </option>
+  </component>
+</project>
