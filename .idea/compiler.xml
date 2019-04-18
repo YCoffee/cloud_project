@@ -9,13 +9,8 @@
         <module name="consumer-ribbon" />
         <module name="provide-service" />
         <module name="consumer-feign" />
-        <module name="zuul-service" />
-      </profile>
-      <profile name="Annotation profile for cloud_project" enabled="true">
-        <sourceOutputDir name="../eureka-server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../eureka-server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
+        <module name="zuul-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
